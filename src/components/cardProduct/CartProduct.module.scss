@@ -1,0 +1,50 @@
+@import '../../styles/colors.scss';
+
+.cardProduct {
+
+  &:last-child {
+    padding-top: 0;
+  }
+
+  &__img {
+    border-radius: 30px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+    img {
+      display: block;
+      width: 100%;
+      transform: rotate(-25deg);
+      filter: drop-shadow(0 30px 30px rgba(0,0,0,.3));
+      margin-left: -16px;
+    }
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 24px 0 20px;
+    color: $Black;
+  }
+
+  &__description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: $Gray;
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: $Black;
+    }
+  }
+}

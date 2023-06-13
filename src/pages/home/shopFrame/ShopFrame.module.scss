@@ -1,0 +1,18 @@
+.shop {
+  position: relative;
+
+  &__item {
+    padding: 40px 0;
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  &__loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+  }
+}

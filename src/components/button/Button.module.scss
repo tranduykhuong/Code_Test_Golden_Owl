@@ -1,0 +1,75 @@
+@import '../../styles/colors.scss';
+
+.my-btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+
+  &__content {
+    display: flex;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.block {
+  display: block;
+}
+
+.large {
+  height: 4.6rem;
+  min-width: 4.6rem;
+  line-height: 4.6rem;
+  font-size: 1.4rem;
+  padding: 0.4rem 2rem;
+}
+
+.small {
+  height: 2.8rem;
+  line-height: 2.8rem;
+  width: 2.8rem;
+  font-size: 1.4rem;
+}
+
+.borderRadius {
+  border-radius: 40px;
+}
+
+.circleBtn {
+  border-radius: 50%;
+  padding: 0;
+}
+
+.primary {
+  background-color: $Yellow;
+  font-weight: 700;
+  color: $Black;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f8d43f;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, .1);
+  }
+}
+
+.gray {
+  background-color: #eeeeee;
+  color: $Gray;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, .1);
+  }
+}
